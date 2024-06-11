@@ -14,6 +14,6 @@ The Python script processes AIS (Automatic Identification System) data to identi
 ### Output
 The script outputs the closest vessels were LATTE (MMSI: 219020332) and SILLE BOB (MMSI: 219017554) at 28/12/2021 17:58:28.
 
-![Trajectory Plot](https://github.com/MatasSepikas/BigDataExam/blob/main/trajectory_plot.png))
+![Trajectory Plot](https://github.com/MatasSepikas/BigDataExam/blob/main/trajectory_plot.png)
 
 Trajectory visualization 10 minutes before the rendezvous moment indicates that it's possible the ships collided.
