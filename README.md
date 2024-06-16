@@ -12,7 +12,7 @@ The Python script processes AIS (Automatic Identification System) data to identi
 - **Visualization of trajectories**: plot the 20-minute trajectories around the rendezvous moment for the closest vessels. 
 
 ### Output
-The script outputs the closest vessels were LATTE (MMSI: 219020332) and SILLE BOB (MMSI: 219017554) at 28/12/2021 17:58:28.
+The script outputs the closest vessels were KBV 302 (MMSI: 265388000) and KBV 034 (MMSI: 266334000) at 13/12/2021 10:43:26
 
 ![Trajectory Plot](https://github.com/MatasSepikas/BigDataExam/blob/main/trajectory_plot.png)
 
