@@ -44,7 +44,8 @@ def find_closest_vessels(df):
 def process_file(file_path):
     center_latitude, center_longitude = 55.225000, 14.245000
     radius_km = 50
-    data = pd.read_csv(file_path, usecols=['# Timestamp', 'MMSI', 'Latitude', 'Longitude', 'Name'])
+    data = pd.read_csv(file_path, usecols=['# Timestamp', 'Type of mobile', 'MMSI', 'Latitude', 'Longitude',
+       'Navigational status', 'ROT', 'SOG', 'COG', 'Heading', 'Name'])
     data.dropna(inplace=True)
     distances = haversine(data['Latitude'].values, data['Longitude'].values, center_latitude, center_longitude)
     data_in_circle = data[distances <= radius_km]

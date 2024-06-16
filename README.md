@@ -4,7 +4,7 @@ The Python script processes AIS (Automatic Identification System) data to identi
 ### Program
 
 - **Process files**: read and process multiple CSV files containing AIS data.
-- **Remove noise**: remove rows with missing values in the selected  MMSI, timestamp, latitude, longitude, and vessel name columns.
+- **Remove noise**: remove rows with missing values in the selected type of mobile, MMSI, timestamp, latitude, longitude, navigational status, ROT, SOG, COG, heading and vessel name columns.
 - **Filter data**: use the Haversine formula to filter data within a 50 km radius around a central point defined by Latitude: 55.225000, Longitude: 14.245000.
 - **Find closest vessels**: identify the closest unique pairs of vessels at different times
 - tamps by calculating distances using the Euclidean distance method. The program collects the lowest distances at each timestamp, daily, and overall for all given datasets.
@@ -12,8 +12,8 @@ The Python script processes AIS (Automatic Identification System) data to identi
 - **Visualization of trajectories**: plot the 20-minute trajectories around the rendezvous moment for the closest vessels. 
 
 ### Output
-The script outputs the closest vessels were KBV 302 (MMSI: 265388000) and KBV 034 (MMSI: 266334000) at 13/12/2021 10:43:26
+The script outputs the closest vessels were KBV 302 (MMSI: 265388000) and KBV 034 (MMSI: 266334000) at 13/12/2021 10:43:26.
 
-![Trajectory Plot](https://github.com/MatasSepikas/BigDataExam/blob/main/trajectory_plot.png)
+![Trajectory Plot](C:\Users\matas\PycharmProjects\BigDataExam\trajectory_plot.png)
 
 Trajectory visualization 10 minutes before the rendezvous moment indicates that it's possible the ships collided.
